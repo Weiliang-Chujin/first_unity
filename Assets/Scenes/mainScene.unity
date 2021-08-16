@@ -613,7 +613,7 @@ MonoBehaviour:
   dailyPanel: {fileID: 2118348212}
   commodityPanel: {fileID: 106740144}
   playerInfoController: {fileID: 123768859}
-  jsonread: {fileID: 123768857}
+  jsonReader: {fileID: 123768857}
   dailyTitlePrefab: {fileID: 2465674671990156525, guid: 8247395ec7f3647dab66125f25988396,
     type: 3}
   commodityPrefab: {fileID: 237710162219068804, guid: f8d5b607314574c779abe6ace1c029f5,
@@ -2582,7 +2582,7 @@ GameObject:
   - component: {fileID: 2118348214}
   - component: {fileID: 2118348216}
   m_Layer: 5
-  m_Name: DailtTitlePanel
+  m_Name: DailyTitlePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
