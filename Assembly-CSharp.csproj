@@ -58,14 +58,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\DailyCommodity\Commodity.cs" />
-     <Compile Include="Assets\Script\DailyCommodity\CommodityOperation.cs" />
-     <Compile Include="Assets\Script\DailyCommodity\CommodityPrefab.cs" />
-     <Compile Include="Assets\Script\DailyCommodity\Jsonread.cs" />
-     <Compile Include="Assets\Script\GameOperation\GameControl.cs" />
-     <Compile Include="Assets\Script\GameOperation\PlayerManager.cs" />
-     <Compile Include="Assets\Script\SoldierBox\SoldierBoxOperation.cs" />
-     <Compile Include="Assets\Script\SoldierBox\SoldierBoxPrefab.cs" />
+     <Compile Include="Assets\Script\Config\Jsonread.cs" />
+     <Compile Include="Assets\Script\Controller\DailySelection\CommodityController.cs" />
+     <Compile Include="Assets\Script\Controller\GameController\GameController.cs" />
+     <Compile Include="Assets\Script\Controller\GameController\PlayerInfoController.cs" />
+     <Compile Include="Assets\Script\Controller\SoldierRecruitment\SoldierBoxController.cs" />
+     <Compile Include="Assets\Script\Data\Commodity.cs" />
+     <Compile Include="Assets\Script\Data\CommodityPrefab.cs" />
+     <Compile Include="Assets\Script\Data\SoldierBoxPrefab.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
