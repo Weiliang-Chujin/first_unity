@@ -24,4 +24,4 @@ CoinMove类：购买宝箱，飞出金币动画。
 
 4.流程图
 
-![flowPath](https://github.com/89trillion-hehuan/first/blob/master/flowPath.png)
+![flowPath](https://github.com/89trillion-hehuan/first_test/blob/main/FlowChart.png)
