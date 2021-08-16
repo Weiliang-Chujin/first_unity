@@ -57,7 +57,7 @@ public class SoldierBoxController : MonoBehaviour
         coinNum = buyTimes * 5;
         coinNum = Mathf.Clamp(coinNum, 0, maxcoinNum);
         
-        //计算金币初始位置和目标位置
+        //滚动视图滚动中要改变坐标，在这里计算金币初始位置和目标位置
         startPosition = shopPanel.transform.localPosition + scrollView.transform.localPosition + 
                         viewPort.transform.localPosition + content.transform.localPosition + 
                         soldierBoxPanel.transform.localPosition + soldierBoxobj.transform.localPosition;
@@ -67,7 +67,7 @@ public class SoldierBoxController : MonoBehaviour
         GameObject coin = Instantiate(coinPrefab, canvas.transform);
         coin.transform.localPosition = startPosition;
         
-        //金币移动，到达目标位置，销毁金币，总金币数增加
+        //金币移动，到达目标位置，销毁金币，玩家总金币数增加
         coin.transform.DOLocalMove(targetPosition, coinMoveTime).SetLoops(coinNum,LoopType.Restart).OnStepComplete(() =>
         {
             playerInfoController.ModifyCoin(1);

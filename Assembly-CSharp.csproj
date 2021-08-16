@@ -58,7 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Config\Jsonread.cs" />
+     <Compile Include="Assets\Script\Config\JsonReader.cs" />
      <Compile Include="Assets\Script\Controller\DailySelection\CommodityController.cs" />
      <Compile Include="Assets\Script\Controller\GameController\GameController.cs" />
      <Compile Include="Assets\Script\Controller\GameController\PlayerInfoController.cs" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +30,10 @@ public class CommodityPrefab : MonoBehaviour
     public void modifyCommodityNum(int addNum)
     {
         num += addNum;
-        numText.text = String.Concat("x", num);
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.Append("x");
+        stringBuilder.Append(num);
+        numText.text = stringBuilder.ToString();
     }
     
     //修改商品下的购买按钮显示，state为0时，为购买按钮，state为1时，为已购买按钮

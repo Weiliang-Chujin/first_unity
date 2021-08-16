@@ -11,7 +11,7 @@ public class CommodityController : MonoBehaviour
 	public GameObject dailyPanel; //每日精选标题容器
     public GameObject commodityPanel; //商品容器
     public PlayerInfoController playerInfoController; //玩家信息控制类
-    public Jsonread jsonread; //读取json数据类
+    public JsonReader jsonReader; //读取json数据类
 
     public GameObject dailyTitlePrefab; //每日精选标题预制体
     public CommodityPrefab commodityPrefab; //商品预制体
@@ -22,7 +22,7 @@ public class CommodityController : MonoBehaviour
     void Start()
     {
 	    count = 0;
-	    CreateCommodity(jsonread.commodities);
+	    CreateCommodity(jsonReader.commodities);
     } 
 	
     //生成每日精选标题、商品和lock商品
