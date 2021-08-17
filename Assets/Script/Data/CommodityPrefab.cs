@@ -27,17 +27,17 @@ public class CommodityPrefab : MonoBehaviour
     public int costNum; //商品单价
 
     //修改商品数量及其显示文字
-    public void modifyCommodityNum(int addNum)
+    public void ModifyCommodityNum(int addNum)
     {
-        num += addNum;
         StringBuilder stringBuilder = new StringBuilder();
+        num += addNum;
         stringBuilder.Append("x");
         stringBuilder.Append(num);
         numText.text = stringBuilder.ToString();
     }
     
     //修改商品下的购买按钮显示，state为0时，为购买按钮，state为1时，为已购买按钮
-    public void modifyButtonState(int state)
+    public void ModifyButtonState(int state)
     {
         if (state == 0)
         {

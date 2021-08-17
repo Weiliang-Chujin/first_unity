@@ -42,7 +42,7 @@ public class CommodityController : MonoBehaviour
             InitializeInfo(commodity, commodityobj);
 
             //商品购买按钮激活，购买成功按钮关闭，购买按钮绑定购买事件
-			commodityobj.modifyButtonState(0);
+			commodityobj.ModifyButtonState(0);
             commodityobj.buyButton.onClick.AddListener(()=> { Buy(commodityobj); });
         }
         
@@ -65,7 +65,7 @@ public class CommodityController : MonoBehaviour
 	    number = random.Next(1,3);
 
 	    //初始化商品数量
-	    commodityObject.modifyCommodityNum(commodity.num);
+	    commodityObject.ModifyCommodityNum(commodity.num);
 		
 	    //卡牌类型的图片初始化,使用紫色背景,不同类型的图片使用不同的卡牌
 	    if (commodity.type == 3) 
@@ -125,10 +125,10 @@ public class CommodityController : MonoBehaviour
 		    playerInfoController.ModifyCoin(-commodityObject.costNum);
         
 		    //修改商品数量显示
-		    commodityObject.modifyCommodityNum(-1);
+		    commodityObject.ModifyCommodityNum(-1);
         
 		    //按钮变为已购买按钮
-		    commodityObject.modifyButtonState(1);
+		    commodityObject.ModifyButtonState(1);
 	    }
     }
 
