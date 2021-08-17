@@ -41,7 +41,7 @@ public class SoldierBoxController : MonoBehaviour
     }
     
     //生成士兵招募标题和紫色宝箱
-    public void CreateSoldierBox()
+    private void CreateSoldierBox()
     {
         GameObject soldierTitleobj = Instantiate(soldierTitlePrefab, soldierTitlePanel.transform);
         SoldierBoxPrefab soldierBoxobj =  Instantiate(soldierBoxPrefab, soldierBoxPanel.transform);
@@ -50,7 +50,7 @@ public class SoldierBoxController : MonoBehaviour
     }
     
     //点击后生成金币，dotween实现金币动画
-    public void CoinAnimation(SoldierBoxPrefab soldierBoxobj)
+    private void CoinAnimation(SoldierBoxPrefab soldierBoxobj)
     {
         //限制生成金币数量
         buyTimes += 1;

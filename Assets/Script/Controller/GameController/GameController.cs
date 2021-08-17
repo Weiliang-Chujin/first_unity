@@ -19,14 +19,14 @@ public class GameController : MonoBehaviour
     } 
         
     //进入商店界面
-    public void Enter()
+    private void Enter()
     {
         shopPanel.SetActive(true);
         emptyPanel.SetActive(false);
     }
     
     //退出商店界面
-    public void Exit()
+    private void Exit()
     {
         shopPanel.SetActive(false);
         emptyPanel.SetActive(true);

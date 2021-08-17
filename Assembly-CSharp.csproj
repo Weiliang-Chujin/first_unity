@@ -64,8 +64,8 @@
      <Compile Include="Assets\Script\Controller\GameController\PlayerInfoController.cs" />
      <Compile Include="Assets\Script\Controller\SoldierRecruitment\SoldierBoxController.cs" />
      <Compile Include="Assets\Script\Data\Commodity.cs" />
-     <Compile Include="Assets\Script\Data\CommodityPrefab.cs" />
-     <Compile Include="Assets\Script\Data\SoldierBoxPrefab.cs" />
+     <Compile Include="Assets\Script\View\CommodityPrefab.cs" />
+     <Compile Include="Assets\Script\View\SoldierBoxPrefab.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
      <Compile Include="Assets\ThirdParty\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />

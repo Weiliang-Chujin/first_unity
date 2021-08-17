@@ -27,7 +27,7 @@ public class CommodityController : MonoBehaviour
     } 
 	
     //生成每日精选标题、商品和lock商品
-    public void CreateCommodity(Commodity[] commodities)
+    private void CreateCommodity(Commodity[] commodities)
     {
 	    //添加每日精选标题
 	    GameObject dailyTitleobj = Instantiate(dailyTitlePrefab, dailyPanel.transform);
@@ -55,7 +55,7 @@ public class CommodityController : MonoBehaviour
     }
     
     //初始化商品子物体的各信息
-    public void InitializeInfo(Commodity commodity, CommodityPrefab commodityObject)
+    private void InitializeInfo(Commodity commodity, CommodityPrefab commodityObject)
     {
 	    StringBuilder stringBuilder = new StringBuilder();
 	    int number = 0;
@@ -116,7 +116,7 @@ public class CommodityController : MonoBehaviour
 	} //InitializeInfo方法结束
     
     //购买商品
-    public void Buy(CommodityPrefab commodityObject)
+    private void Buy(CommodityPrefab commodityObject)
     {
 	    //需花费的金币小于等于总金币且商品数量大于0，可以进行购买
 	    if (commodityObject.costNum <= playerInfoController.totalCoin && commodityObject.num >= 0)
