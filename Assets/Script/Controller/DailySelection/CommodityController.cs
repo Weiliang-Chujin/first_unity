@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -12,22 +13,27 @@ public class CommodityController : MonoBehaviour
 	public GameObject dailyPanel; //每日精选标题容器
     public GameObject commodityPanel; //商品容器
     public PlayerInfoController playerInfoController; //玩家信息控制类
-    public JsonReader jsonReader; //读取json数据类
 
     public GameObject dailyTitlePrefab; //每日精选标题预制体
     public CommodityPrefab commodityPrefab; //商品预制体
     public GameObject lockPrefab; //lock商品的预制体
 
     private int count; //生成的商品计数
+    private Commodity[] commodities; //保存商品json数据
+
+    private void Awake()
+    {
+	    commodities = JsonReader.ReadJson();
+    }
 
     void Start()
     {
 	    count = 0;
-	    CreateCommodity(jsonReader.commodities);
+	    CreateCommodity();
     } 
 	
     //生成每日精选标题、商品和lock商品
-    private void CreateCommodity(Commodity[] commodities)
+    private void CreateCommodity()
     {
 	    //添加每日精选标题
 	    GameObject dailyTitleobj = Instantiate(dailyTitlePrefab, dailyPanel.transform);

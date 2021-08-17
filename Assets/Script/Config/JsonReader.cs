@@ -7,17 +7,11 @@ using SimpleJSON;
 /*
  * json读取类，读取商品的json数据
  */
-public class JsonReader : MonoBehaviour
+public class JsonReader 
 {
-	public Commodity[] commodities; //保存商品json数据
-
-	void Awake()
-	{
-		commodities = ReadJson();
-	}
-
+	
 	//读取商品的json数据
-    public Commodity[] ReadJson()
+    public static Commodity[] ReadJson()
     {
 	    //解析并读取json
 	    TextAsset txtobj = (TextAsset) Resources.Load("Json/data");
