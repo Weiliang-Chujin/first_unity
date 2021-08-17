@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,7 +57,7 @@ public class CommodityController : MonoBehaviour
     //初始化商品子物体的各信息
     public void InitializeInfo(Commodity commodity, CommodityPrefab commodityObject)
     {
-	    string cardImagePath = "";
+	    StringBuilder stringBuilder = new StringBuilder();
 	    int number = 0;
 	    
 	    //利用随机数判断第一个格子是金币还是钻石
@@ -71,8 +72,11 @@ public class CommodityController : MonoBehaviour
 	    {
 		    commodityObject.nameText.text = "卡牌";
 		    commodityObject.cardBackground.sprite = Resources.Load<Sprite>("Images/card_purple_bg");
-		    cardImagePath = string.Concat("Images/", commodity.subType);
-		    commodityObject.cardImage.sprite = Resources.Load<Sprite>(cardImagePath);
+
+		    stringBuilder.Append("Images/");
+		    stringBuilder.Append(commodity.subType);
+		    commodityObject.cardImage.sprite = Resources.Load<Sprite>(stringBuilder.ToString());
+		    stringBuilder.Clear();
 	    } 
 	    //随机数判断显示是金币还是钻石，为1显示为金币，为2显示为钻石
 	    else
