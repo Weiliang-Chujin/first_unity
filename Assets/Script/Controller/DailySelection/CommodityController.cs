@@ -9,7 +9,7 @@ using UnityEngine.UI;
  * 商品控制类，生成商品，并初始化其子物体各信息显示，购买商品操作
  */
 public class CommodityController : MonoBehaviour
-{
+{ 
 	public PlayerInfoController playerInfoController; //玩家信息控制类
 	public GameObject dailyPanel; //每日精选标题容器
     public GameObject commodityPanel; //商品容器
