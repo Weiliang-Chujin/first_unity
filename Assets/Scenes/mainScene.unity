@@ -280,8 +280,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 181957006}
   m_HandleRect: {fileID: 181957005}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.8263711
+  m_Value: 1.9867458
+  m_Size: 0.41319713
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -361,7 +361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1111.5002}
+  m_AnchoredPosition: {x: 0, y: 650.69055}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &90745228
@@ -512,9 +512,9 @@ GameObject:
   m_Component:
   - component: {fileID: 123768856}
   - component: {fileID: 123768861}
-  - component: {fileID: 123768860}
   - component: {fileID: 123768859}
   - component: {fileID: 123768858}
+  - component: {fileID: 123768857}
   m_Layer: 5
   m_Name: ControlEvent
   m_TagString: Untagged
@@ -541,6 +541,27 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -122}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &123768857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123768855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362505b3e44f540bc91fd5768b3927b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dailyPanel: {fileID: 2118348212}
+  commodityPanel: {fileID: 106740144}
+  playerInfoController: {fileID: 123768859}
+  dailyTitlePrefab: {fileID: 2465674671990156525, guid: 8247395ec7f3647dab66125f25988396,
+    type: 3}
+  commodityPrefab: {fileID: 237710162219068804, guid: f8d5b607314574c779abe6ace1c029f5,
+    type: 3}
+  lockPrefab: {fileID: 3269797023564921656, guid: ee2215c88408d46f0b6657430efcdd03,
+    type: 3}
 --- !u!114 &123768858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,27 +606,6 @@ MonoBehaviour:
   totalCoin: 0
   totalDiamondText: {fileID: 258330297}
   totalDiamond: 0
---- !u!114 &123768860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123768855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6766223111046f586d282cf267e036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dailyPanel: {fileID: 2118348212}
-  commodityPanel: {fileID: 106740144}
-  playerInfoController: {fileID: 123768859}
-  dailyTitlePrefab: {fileID: 2465674671990156525, guid: 8247395ec7f3647dab66125f25988396,
-    type: 3}
-  commodityPrefab: {fileID: 237710162219068804, guid: f8d5b607314574c779abe6ace1c029f5,
-    type: 3}
-  lockPrefab: {fileID: 3269797023564921656, guid: ee2215c88408d46f0b6657430efcdd03,
-    type: 3}
 --- !u!114 &123768861
 MonoBehaviour:
   m_ObjectHideFlags: 0
