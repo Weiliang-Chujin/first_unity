@@ -27,11 +27,11 @@ public class CommodityPrefab : MonoBehaviour
     public void ModifyCardBackground()
     {
         StringBuilder stringBuilder = new StringBuilder();
-        int number = 0;
+        int randNumber = 0;
 	    
         //利用随机数判断第一个格子是金币还是钻石
         System.Random random= new System.Random();
-        number = random.Next(1,3);
+        randNumber = random.Next(1,3);
         
         //卡牌类型的图片初始化,使用紫色背景,不同类型的图片使用不同的卡牌
         if (commodity.type == 3) 
@@ -50,7 +50,7 @@ public class CommodityPrefab : MonoBehaviour
             commodity.costGold = 0;
             costNumText.text = "0";
             cardBackground.sprite = Resources.Load<Sprite>("Images/card_coin_gem");
-            if (number == 1) 
+            if (randNumber == 1) 
             {
                 nameText.text = "金币";
                 cardImage.sprite = Resources.Load<Sprite>("Images/coin_1");
@@ -66,10 +66,9 @@ public class CommodityPrefab : MonoBehaviour
     }
 
     //修改商品数量及其显示文字
-    public void ModifyCommodityNum(int addNum)
+    public void ModifyCommodityNum()
     {
         StringBuilder stringBuilder = new StringBuilder();
-        commodity.num += addNum;
         stringBuilder.Append("x");
         stringBuilder.Append(commodity.num);
         numText.text = stringBuilder.ToString();

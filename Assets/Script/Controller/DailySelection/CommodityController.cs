@@ -10,6 +10,7 @@ using UnityEngine.UI;
  */
 public class CommodityController : MonoBehaviour
 {
+	
 	public CommodityPrefab commodityPrefab; //商品预制体
     public GameObject lockPrefab; //lock商品的预制体
     public GameObject dailyTitlePrefab; //每日精选标题预制体
@@ -46,7 +47,7 @@ public class CommodityController : MonoBehaviour
             count++;
 
             //初始化商品数量
-            commodityobj.ModifyCommodityNum(commodityobj.commodity.num);
+            commodityobj.ModifyCommodityNum();
             
             //初始化商品图片
             commodityobj.ModifyCardBackground();
@@ -77,7 +78,8 @@ public class CommodityController : MonoBehaviour
 		    playerInfoController.ModifyCoin(-commodityObject.commodity.costGold);
         
 		    //修改商品数量显示
-		    commodityObject.ModifyCommodityNum(-1);
+		    commodityObject.commodity.num -= 1; 
+		    commodityObject.ModifyCommodityNum();
         
 		    //按钮变为已购买按钮
 		    commodityObject.ModifyButtonState(1);
