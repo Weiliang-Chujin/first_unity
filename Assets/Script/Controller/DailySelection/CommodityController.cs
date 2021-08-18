@@ -10,13 +10,13 @@ using UnityEngine.UI;
  */
 public class CommodityController : MonoBehaviour
 {
-	public GameObject commodityPanel; //商品容器
-	public PlayerInfoController playerInfoController;  //玩家信息控制类
-	public GameObject dailyPanel; //每日精选标题容器
-	
-	public GameObject dailyTitlePrefab; //每日精选标题预制体
-    public CommodityPrefab commodityPrefab; //商品预制体
+	public CommodityPrefab commodityPrefab; //商品预制体
     public GameObject lockPrefab; //lock商品的预制体
+    public GameObject dailyTitlePrefab; //每日精选标题预制体
+
+    public GameObject commodityPanel; //商品容器
+    public PlayerInfoController playerInfoController; //玩家信息控制类
+    public GameObject dailyPanel; //每日精选标题容器
 
     private int count; //生成的商品计数
     private Commodity[] commodities; //保存商品json数据
